@@ -1,4 +1,6 @@
 import { LayoutProps } from '@models/common'
+import Image from 'next/image'
+import banner from '@assets/images/banner.svg'
 
 const AuthLayout = ({ children }: LayoutProps) => {
     return (
@@ -15,10 +17,9 @@ const AuthLayout = ({ children }: LayoutProps) => {
                                 <a className="brand-logo" href="index.html">
                                     <h2 className="brand-text text-primary ms-1">Time Keeper</h2>
                                 </a>
-
                                 <div className="d-none d-lg-flex col-lg-8 align-items-center p-5">
                                     <div className="w-100 d-lg-flex align-items-center justify-content-center px-5">
-                                        <img className="img-fluid" src="/images/banner.svg" alt="Login V2" />
+                                        <Image className="img-fluid" src={banner} alt="Login V2" />
                                     </div>
                                 </div>
                                 {children}
