@@ -1,6 +1,5 @@
 import AuthLayout from '@components/layouts/auth';
 import { Form, Button } from 'react-bootstrap'
-import { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { ISignIn } from '@models/index';
